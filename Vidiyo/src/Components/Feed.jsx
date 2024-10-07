@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
 import { Box, Stack , Typography} from '@mui/material'
-import {Sidebar , Videos} from "./"
+import {Sidebar , Videos} from "."
 
 import { fetchFromAPI } from '../utils/fetchFromAPI'
 const Feed = () => {
@@ -9,7 +9,7 @@ const Feed = () => {
 
 
   useEffect (() => {
-    fetchFromAPI ( `search?part=snippet&q=${selectedCategory}`)
+    fetchFromAPI ( `search?part=snippet&q=${selectedCategory}&type=video`)
       .then((data) => setVideos(data.items))
 
 
@@ -26,7 +26,7 @@ const Feed = () => {
 
         <Typography className="copyright" variant="body2"  sx={ { mt : 1.5 , color: '#fff' }}>
 
-          Copyright 2024 HamzaisaDev
+          Copyright 2024 HamzaIshaq
         </Typography>
       </Box>
 
@@ -36,7 +36,7 @@ const Feed = () => {
           {selectedCategory} <span style= { { color: '#f31503' , fontSize: '30px'}}>videos</span>
         </Typography>
  
-        <Videos  videos={videos}/>
+        <Videos  videos={videos} selectedCategory={selectedCategory}/>
 
 
 

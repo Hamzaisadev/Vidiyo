@@ -49,6 +49,9 @@ a {
   outline:none;
   width:350px;
 }
+.jadu-img{
+  height: 75px;
+}
 
 .category-btn{
   font-weight: bold !important;
@@ -77,17 +80,24 @@ a {
   .copyright{
     display:none !important;
   }
+
+  .jadu-img{
+    height: 40px;
+  }
 }
 
 @media screen and (max-width: 600px) {
   .scroll-horizontal {
     overflow: auto !important;
   }
+  .jadu-img{
+    height: 50px;
+  }
 
   .react-player {
     height: 45vh !important;
   }
   .search-bar{
-    width:200px;
+    width:150px;
   }
 }

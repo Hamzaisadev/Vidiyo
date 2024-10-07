@@ -1,7 +1,7 @@
 import {Stack} from '@mui/material'
 import { Link } from 'react-router-dom'
 
-import logo  from '../../src/utils/constants'
+import logo  from '../utils/constants'
 import  SearchBar  from './SearchBar'
 const Navbar = () => 
    (
@@ -16,7 +16,7 @@ const Navbar = () =>
         justifyContent: 'space-between'}}
     >
         <Link to='/' style={{ display: 'flex', alignItems: 'center'}}>
-        <img src={logo} alt="logo" height={75} />
+        <img className="jadu-img" src={logo} alt="logo"  />
         </Link>
         <SearchBar />
     </Stack>
