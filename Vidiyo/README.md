@@ -172,4 +172,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-For any inquiries, please reach out to [your.email@example.com](mailto:your.email@example.com). You can also follow us on [Twitter](https://twitter.com/yourusername) or visit our [website](https://yourwebsite.com).
+For any inquiries, please reach out to [Hamzaisadev@gmail.com](Hamzaisadev@gmail.com). You can  visit our [website](hamzaisadev.netlify.app).
